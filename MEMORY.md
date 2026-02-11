@@ -107,3 +107,11 @@
 - 灰度与治理：LongCtx pilot 扩展到 `ctf-director`（pilot：main/news-analyst/ctf-director）；7/7 agent 宣贯 ACK 完成，执行口径为“小雅审计上报、主控负责阻断/降级”。
 
 
+
+## 2026-02-11 22:41 - 每日记忆精炼（自动策略）
+
+- 新增协作角色：`codex-engineer` 代码机器人已完成上线与群绑定，协作模式固定为“主控调度 + 代码机实现 + 主控验收收口”，作为后续代码类任务默认链路。
+- 统一规则层 v1 已全员下发（参数白名单、`NO_CHANGE => NO_REPLY`、`STRICT_OUTPUT`、`STATE_CARD`），并新增每日漂移巡检 cron（`b06dfc96-f0a6-402c-af4a-e99f56242f11`）做持续防漂移。
+- OpenClaw 运行基线升级到 `2026.2.9`，更新后需结合 `openclaw gateway restart` 验证可用性，当前本机链路已验证稳定。
+- Backfill 并发治理进入收口阶段：锁机制升级为原子目录锁并强化 cleanup，执行超时参数纳入默认守卫（`--max-runtime-sec 600`、`--chunk-timeout-sec 45`），用于避免锁残留与长阻塞。
+- 记忆架构定版为 `1主2域1兜底`：LongCtx 主编排、聊天RAG/文档RAG分域、原生记忆仅兜底；V2 文档已设为冲突优先级来源并驱动后续实现。
