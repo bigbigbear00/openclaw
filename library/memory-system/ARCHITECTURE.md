@@ -1,5 +1,7 @@
 # 架构说明：Memory 系统 × LongCtx（统一版）
 
+> 2026-02-11 更新：若与 `library/memory-system/ARCH_V2_longctx_primary_dual_rag_2026-02-11.md` 冲突，以 V2 定版为准。
+
 ## 1) 分层架构
 
 ### A. Memory（数据/治理层）

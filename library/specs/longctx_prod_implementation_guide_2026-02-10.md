@@ -1,5 +1,7 @@
 # LongCtx 生产实现完整开发文档（v1）
 
+> 2026-02-11 冲突优先级说明：若与 `library/memory-system/ARCH_V2_longctx_primary_dual_rag_2026-02-11.md` 冲突，以 V2 定版为准。
+
 - 日期：2026-02-10
 - 目标：把“聊天窗口防溢出”从现有能力（compaction + memoryFlush）升级为可审计、可复用、可跨 Agent 的统一长上下文系统。
 - 适用范围：OpenClaw 主控与全部子 Agent。
