@@ -5,6 +5,13 @@ This does NOT touch production; it reads from a sample message file (or generate
 from pathlib import Path
 import json
 import time
+import sys
+
+# Allow direct execution: python /abs/path/scripts/longctx_staging_integration.py
+ROOT = Path(__file__).resolve().parents[1]
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
+
 from scripts.longctx_runtime import handle_telegram_message
 
 TRANSCRIPTS = Path('transcripts')
