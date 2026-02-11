@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "ctf/weekly_deliverable.schema.v1.0",
+  "title": "CTF Weekly Deliverable",
+  "type": "object",
+  "required": ["schema_version", "week", "sections", "source_event_ids"],
+  "properties": {
+    "schema_version": {"type": "string", "const": "1.0"},
+    "week": {"type": "string", "description": "YYYY-Www"},
+
+    "sections": {
+      "type": "object",
+      "required": ["insights", "claims", "creatives", "budget", "experiments"],
+      "properties": {
+        "insights": {"type": "array", "items": {"type": "string"}},
+        "claims": {"type": "array", "items": {"type": "string"}},
+        "creatives": {"type": "array", "items": {"type": "string"}},
+        "budget": {"type": "array", "items": {"type": "string"}},
+        "experiments": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+
+    "source_event_ids": {
+      "type": "array",
+      "items": {"type": "string"},
+      "description": "追溯：本周交付物所依据的事件卡/原始事件 ID"
+    }
+  }
+}

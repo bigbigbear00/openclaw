@@ -1,0 +1,11 @@
+{
+  "apps": [
+    {
+      "name": "index-reader-ctf-director",
+      "script": "/Users/apple/clawd/scripts/index_reader.py",
+      "args": "ctf-director",
+      "watch": false,
+      "restart_delay": 5000
+    }
+  ]
+}

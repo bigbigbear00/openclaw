@@ -1,0 +1,66 @@
+[
+  {
+    "name": "worker-nba",
+    "script": "/Users/apple/clawd/scripts/agent_worker.py",
+    "args": "nba-expert",
+    "autorestart": true,
+    "max_restarts": 10,
+    "log_file": "/Users/apple/clawd/logs/worker-nba.log"
+  },
+  {
+    "name": "worker-writer",
+    "script": "/Users/apple/clawd/scripts/agent_worker.py",
+    "args": "writer-editor",
+    "autorestart": true,
+    "max_restarts": 10,
+    "log_file": "/Users/apple/clawd/logs/worker-writer.log"
+  },
+  {
+    "name": "worker-ctf",
+    "script": "/Users/apple/clawd/scripts/agent_worker.py",
+    "args": "ctf-director",
+    "autorestart": true,
+    "max_restarts": 10,
+    "log_file": "/Users/apple/clawd/logs/worker-ctf.log"
+  },
+  {
+    "name": "worker-designer",
+    "script": "/Users/apple/clawd/scripts/agent_worker.py",
+    "args": "designer",
+    "autorestart": true,
+    "max_restarts": 10,
+    "log_file": "/Users/apple/clawd/logs/worker-designer.log"
+  },
+  {
+    "name": "worker-library-keeper",
+    "script": "/Users/apple/clawd/scripts/agent_worker.py",
+    "args": "library-keeper",
+    "autorestart": true,
+    "max_restarts": 10,
+    "log_file": "/Users/apple/clawd/logs/worker-library-keeper.log"
+  },
+  {
+    "name": "worker-main",
+    "script": "/Users/apple/clawd/scripts/agent_worker.py",
+    "args": "main",
+    "autorestart": true,
+    "max_restarts": 10,
+    "log_file": "/Users/apple/clawd/logs/worker-main.log"
+  },
+  {
+    "name": "worker-news-analyst",
+    "script": "/Users/apple/clawd/scripts/agent_worker.py",
+    "args": "news-analyst",
+    "autorestart": true,
+    "max_restarts": 10,
+    "log_file": "/Users/apple/clawd/logs/worker-news-analyst.log"
+  },
+  {
+    "name": "worker-vn-realestate",
+    "script": "/Users/apple/clawd/scripts/agent_worker.py",
+    "args": "vn-realestate",
+    "autorestart": true,
+    "max_restarts": 10,
+    "log_file": "/Users/apple/clawd/logs/worker-vn-realestate.log"
+  }
+]

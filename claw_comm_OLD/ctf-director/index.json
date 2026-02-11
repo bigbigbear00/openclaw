@@ -1,0 +1,12 @@
+{
+  "last_request": {
+    "id": "notify-ctf-director-1770542535",
+    "timestamp": "2026-02-08T17:22:15.190793",
+    "from": "agent:main:main",
+    "type": "request",
+    "subject": "master_notify_and_read",
+    "body": "老板授权（来自主控）：请读取 index.json 并在 index.json 中写回产物路径。",
+    "deadline": "2026-02-08T17:22:15.190810",
+    "priority": "high"
+  }
+}

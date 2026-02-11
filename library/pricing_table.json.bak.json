@@ -1,0 +1,21 @@
+{
+  "generated_at": "2026-02-08T15:28:00+08:00",
+  "currency": "USD",
+  "note": "prices updated per instruction: OpenAI exact values; Google/Antigravity marked internal_free (not external cost).",
+  "prices": {
+    "openai/gpt-5-mini": {"input_per_1m": 0.25, "output_per_1m": 0.025, "per_1m_batch": 2.00, "pricing_status": "exact", "cost_usd_external": 0.25, "source": "https://platform.openai.com/docs/pricing"},
+    "openai/gpt-5": {"input_per_1m": 1.25, "output_per_1m": 0.125, "per_1m_batch": 10.00, "pricing_status": "exact", "cost_usd_external": 1.25, "source": "https://platform.openai.com/docs/pricing"},
+    "openai-codex/gpt-5.2": {"input_per_1m": 1.75, "output_per_1m": 0.175, "per_1m_batch": 14.00, "pricing_status": "exact", "cost_usd_external": 1.75, "source": "https://platform.openai.com/docs/pricing"},
+
+    "openai/gpt-5-pro": {"input_per_1m": 0.0, "output_per_1m": 0.0, "pricing_status": "unknown", "cost_usd_external": null, "source": "pending"},
+
+    "google/gemini-2.5-flash": {"input_per_1m": 0.0, "output_per_1m": 0.0, "pricing_status": "internal_free", "cost_usd_external": null, "source": "internal decision"},
+    "google/gemini-2.5-pro": {"input_per_1m": 0.0, "output_per_1m": 0.0, "pricing_status": "internal_free", "cost_usd_external": null, "source": "internal decision"},
+    "google-antigravity/gemini-3-pro-low": {"input_per_1m": 0.0, "output_per_1m": 0.0, "pricing_status": "internal_free", "cost_usd_external": null, "source": "internal decision"},
+    "google-antigravity/gemini-3-flash": {"input_per_1m": 0.0, "output_per_1m": 0.0, "pricing_status": "internal_free", "cost_usd_external": null, "source": "internal decision"},
+    "google-antigravity/claude-opus-4-6-thinking": {"input_per_1m": 0.0, "output_per_1m": 0.0, "pricing_status": "internal_free", "cost_usd_external": null, "source": "internal decision"},
+
+    "openrouter/auto": {"input_per_1m": 0.0, "output_per_1m": 0.0, "pricing_status": "unknown", "cost_usd_external": null, "source": "pending"},
+    "openrouter/openrouter/free": {"input_per_1m": 0.0, "output_per_1m": 0.0, "pricing_status": "internal_free", "cost_usd_external": null, "source": "internal decision"}
+  }
+}

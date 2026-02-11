@@ -1,0 +1,9 @@
+{
+  "request_id": "test",
+  "artifact": "/Users/apple/clawd/claw_comm/designer/artifacts/test-qa.json",
+  "checked_at": "2026-02-08T18:29:58.388009",
+  "result": "FAILED_QA_PLACEHOLDER",
+  "notes": [
+    "placeholder text found"
+  ]
+}

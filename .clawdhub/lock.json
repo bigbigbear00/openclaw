@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "skills": {
+    "wechat": {
+      "version": "1.0.0",
+      "installedAt": 1770216766203
+    },
+    "channel": {
+      "version": "1.0.1",
+      "installedAt": 1770216794136
+    },
+    "xiaohongshu-mcp": {
+      "version": "1.0.0",
+      "installedAt": 1770219014723
+    }
+  }
+}

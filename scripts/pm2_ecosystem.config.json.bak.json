@@ -1,0 +1,25 @@
+{
+  "apps": [
+    {
+      "name": "worker-nba-expert",
+      "script": "/Users/apple/clawd/scripts/agent_worker.py",
+      "args": "nba-expert",
+      "watch": false,
+      "restart_delay": 1000
+    },
+    {
+      "name": "worker-writer-editor",
+      "script": "/Users/apple/clawd/scripts/agent_worker.py",
+      "args": "writer-editor",
+      "watch": false,
+      "restart_delay": 1000
+    },
+    {
+      "name": "worker-ctf-director",
+      "script": "/Users/apple/clawd/scripts/agent_worker.py",
+      "args": "ctf-director",
+      "watch": false,
+      "restart_delay": 1000
+    }
+  ]
+}

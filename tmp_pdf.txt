@@ -1,0 +1,655 @@
+A Proposal by CityCloud Technology
+for the Development of Smart Karachi
+As Pakistan’s largest city and economic hub, Karachi has long faced challenges in
+social security and public services, which negatively impact sustainable urban
+development. To systematically address these challenges, Karachi urgently needs to
+advance its smart city development. CityCloud Technology, a leading Chinese expert
+in city-level big data intelligence, aligns with China’s national digital strategy and has
+actively contributed to the planning, construction, and operation of smart cities across
+China for many years. With extensive experience, CityCloud Technology is among the
+first enterprises in China to deeply and comprehensively participate in smart city
+projects. Based on this expertise, CityCloud Technology proposes the following
+recommendations for the Smart Karachi initiative.
+I. Development Objectives
+Leveraging big data and intelligent technologies as the core, the project aims to build a
+citywide, interconnected security network. By integrating multi-source data fusion, AIpowered analysis, and fully digitalized event-handling processes, it will enable social
+risk early warning and closed-loop online incident resolution, thereby strengthening
+social safety. Simultaneously, it will drive the digitalization and intelligence of public
+services to improve quality and enhance citizens’ satisfaction.
+II. Development Plan
+Smart Karachi's development draws on China's advanced expertise in smart city
+initiatives, implementing a 5A layered architecture framework:
+Amalgamation Layer (A1): Establishes digital infrastructure.
+Accumulation Layer (A2): Supports data resource development and
+operations.
+
+Acceleration Layer (A3): Accelerates workflows with AI capabilities.
+Activation Layer (A4): Provides foundational support for application systems.
+Application Layer (A5): Covers safety and smart city applications.
+Full-cycle technical operational services will also be provided to ensure alignment with
+project goals. The specific development components are outlined below.
+1. Amalgamation Layer
+•
+
+Command Center: Includes a command hall (for citywide monitoring and
+dispatch), exhibition hall (to showcase achievements), conference hall (for
+remote collaboration), office areas, and dedicated equipment rooms.
+
+•
+
+Perception and Patrol Equipment: Deploys video surveillance, traffic
+checkpoints, drones, robotic dogs, and IoT devices (e.g., for municipal,
+environmental, and law enforcement monitoring).
+
+•
+
+Communication Network: Upgrades Karachi’s existing network with a
+dedicated video transmission network (switches, fiber optics, etc.).
+
+•
+
+Computing Centers: Builds CPU-based general computing centers and GPUpowered AI computing centers.
+
+•
+
+Cloud Platform: Develops a city-level cloud platform covering computing,
+storage, networking, and security.
+
+2. Accumulation Layer
+•
+
+Integrated Data Resource Platform: Offers data governance, visualization
+modeling, intelligent search, and warehousing tools to transform raw data into
+assets.
+
+•
+
+Data Development and Operation Service: Ensures continuous data
+classification, storage, updates, and maintenance for efficient utilization.
+
+3. Acceleration Layer
+•
+
+Large Model Platform: Provides multi-scenario AI models and services.
+
+•
+
+Small Model Platform: Delivers specialized models for specific tasks, either
+standalone or combined with large models.
+
+•
+
+Intelligent Agent Platform: Integrates models to develop, debug, and deploy
+AI agents for complex problem-solving.
+
+4. Activation Layer
+•
+
+Unified Authentication Platform: Enables single sign-on across systems.
+
+•
+
+Unified Video Management Platform: Manages live streams, recordings, and
+metadata.
+
+•
+
+Unified IoT Management Platform: Centralizes control of heterogeneous IoT
+devices.
+
+•
+
+Unified GIS Platform: Integrates geospatial data with video and IoT for
+emergency command.
+
+5. Application Layer
+•
+
+Safe City:
+o
+
+Safe City System: Citywide event detection and response.
+
+o
+
+Drone/Robotic Dog Systems: Patrol management and landing zones.
+
+o
+
+City
+
+Operation
+
+Platform:
+
+Dynamic
+
+monitoring,
+
+operational
+
+management, and services for urban operations.
+o
+•
+
+Digital Twin City: Real-time monitoring and digital twin integration.
+
+Smart City:
+o
+
+Smart Customs: Enhances trade efficiency and risk control.
+
+o
+
+Smart Parking: Unified city parking management.
+
+o
+
+One-Stop Government Services: Streamlines public service delivery.
+
+o
+
+Low-Altitude Logistics: Facilitates cross-regional delivery services.
+
+6. Technical Operational Service
+The development of smart cities is characterized by the involvement of multiple
+departments, extensive use of advanced technologies, diverse application scenarios, and
+numerous sub-projects. To ensure alignment between outcomes and objectives,
+professional technical oversight and adjustments are required throughout the process.
+Key services include integrated planning and coordination of projects, consultation and
+planning for sub-projects, and comprehensive technical review of solutions.
+III. Expected Outcomes
+The Smart Karachi initiative will prioritize "Technology Empowering Security and
+Data-Intelligence Driving Services" as its core principle. Through technology
+integration and institutional innovation, it aims to achieve comprehensive
+improvements in social security and public service levels, laying a solid foundation for
+sustainable urban development. By unlocking the value of data resources, Smart
+Karachi will redefine urban governance and service paradigms, positioning itself as a
+pivotal hub on the Digital Silk Road while providing a replicable "Karachi Model" for
+digital transformation across South Asia.
+
+CityCloud Technology (China) Co., Ltd.
+March 26, 2025
+
+Smart Karachi Preliminary Investment Estimate (USD)
+No.
+
+Item
+
+Unit
+
+Quantity
+
+Unit Price
+
+Total Price
+
+I. Amalgamation Layer
+A. Command Center
+
+25,000,000
+
+1
+
+Command Hall
+
+Set
+
+1
+
+10,000,000
+
+10,000,000
+
+2
+
+Exhibition Hall
+
+Set
+
+1
+
+5,000,000
+
+5,000,000
+
+3
+
+Conference Hall
+
+Set
+
+1
+
+5,000,000
+
+5,000,000
+
+4
+
+Office Area
+
+Set
+
+1
+
+2,000,000
+
+2,000,000
+
+5
+
+Dedicated Equipment Room
+
+Set
+
+1
+
+3,000,000
+
+3,000,000
+
+B. Perception and Patrol Equipment
+
+451,000,000
+
+1
+
+Video Surveillance
+
+Set
+
+100,000
+
+3,000
+
+300,000,000
+
+2
+
+Traffic Checkpoint
+
+Set
+
+200
+
+500,000
+
+100,000,000
+
+3
+
+Drone
+
+Set
+
+100
+
+300,000
+
+30,000,000
+
+4
+
+Robotic Dog
+
+Set
+
+100
+
+200,000
+
+20,000,000
+
+5
+
+IoT Device
+
+Set
+
+1,000
+
+1,000
+
+1,000,000
+
+C. Communication Network
+1
+
+20,000,000
+
+Dedicated Video Transmission Network
+
+Set
+
+1
+
+20,000,000
+
+D. Computing Center
+
+20,000,000
+
+100,000,000
+
+1
+
+CPU-based computing center
+
+Set
+
+1
+
+50,000,000
+
+50,000,000
+
+2
+
+GPU-based computing center
+
+Set
+
+1
+
+50,000,000
+
+50,000,000
+
+E. Cloud Platform
+1
+
+20,000,000
+
+Cloud Platform
+
+Set
+
+1
+
+20,000,000
+
+Subtotal
+
+20,000,000
+
+616,000,000
+
+II. Accumulation Layer
+1
+
+Integrated Data Resource Platform
+
+Set
+
+1
+
+30,000,000
+
+30,000,000
+
+2
+
+Data Development and Operation Service
+
+Year
+
+1
+
+20,000,000
+
+20,000,000
+
+Subtotal
+
+50,000,000
+
+III. Acceleration Layer
+1
+
+Large Model Platform
+
+Set
+
+1
+
+15,000,000
+
+15,000,000
+
+2
+
+Small Model Platform
+
+Set
+
+1
+
+15,000,000
+
+15,000,000
+
+3
+
+Intelligent Agent Platform
+
+Set
+
+1
+
+15,000,000
+
+15,000,000
+
+Subtotal
+
+45,000,000
+
+IV. Activation Layer
+1
+
+Unified Authentication Platform
+
+Set
+
+1
+
+5,000,000
+
+5,000,000
+
+2
+
+Unified Video Management Platform
+
+Set
+
+1
+
+5,000,000
+
+5,000,000
+
+3
+
+Unified IoT Management Platform
+
+Set
+
+1
+
+6,000,000
+
+6,000,000
+
+4
+
+Unified GIS Platform
+
+Set
+
+1
+
+8,000,000
+
+8,000,000
+
+Subtotal
+
+24,000,000
+
+V. Application Layer
+A. Safe City
+
+140,000,000
+
+1
+
+Safe City System
+
+Set
+
+1
+
+40,000,000
+
+40,000,000
+
+2
+
+Drone Management System
+
+Set
+
+1
+
+5,000,000
+
+5,000,000
+
+3
+
+Drone Landing Zone
+
+Set
+
+100
+
+500,000
+
+50,000,000
+
+4
+
+Robotic Dog Management System
+
+Set
+
+1
+
+5,000,000
+
+5,000,000
+
+5
+
+City Operation Platform
+
+Set
+
+1
+
+25,000,000
+
+25,000,000
+
+6
+
+Digital Twin City
+
+Set
+
+1
+
+15,000,000
+
+15,000,000
+
+B. Smart City
+
+75,000,000
+
+1
+
+Smart Customs
+
+Set
+
+1
+
+25,000,000
+
+25,000,000
+
+2
+
+Smart Parking
+
+Set
+
+1
+
+20,000,000
+
+20,000,000
+
+3
+
+One-Stop Government Service
+
+Set
+
+1
+
+20,000,000
+
+20,000,000
+
+4
+
+Low-Altitude Logistics
+
+Set
+
+1
+
+10,000,000
+
+10,000,000
+
+Subtotal
+
+215,000,000
+
+VI. Technical Operational Service
+1
+
+Technical Operational Service
+
+Year
+
+1
+
+50,000,000
+
+50,000,000
+
+Subtotal
+
+50,000,000
+
+Total
+
+1,000,000,000
+
+

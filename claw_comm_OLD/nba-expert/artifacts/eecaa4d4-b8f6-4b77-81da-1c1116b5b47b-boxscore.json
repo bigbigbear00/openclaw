@@ -1,0 +1,12 @@
+[
+  {
+    "game": "Lakers vs Warriors",
+    "score": "125-118",
+    "boxscore_url": "https://www.espn.com/nba/recap?gameId=401810574",
+    "top_players": [
+      {"name": "LeBron James", "pts": 28, "reb": 11, "ast": 10},
+      {"name": "Anthony Davis", "pts": 22, "reb": 10, "ast": 2}
+    ],
+    "highlight": "LeBron recorded a triple-double to lead Lakers to victory."
+  }
+]

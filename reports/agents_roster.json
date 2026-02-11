@@ -1,0 +1,78 @@
+{
+  "generatedAt": "2026-02-09T22:12:00+08:00",
+  "agents": [
+    {
+      "id": "main",
+      "name": "哆啦Ai熊（主控助手）",
+      "role": "主控总调度，任务分派、记忆闭环与系统可靠性",
+      "workspace": "/Users/apple/clawd",
+      "telegram": null,
+      "model": "openai/gpt-5-mini",
+      "notes": "负责派单/审计/记忆管理、cron 调度、跨 agent 协作与合并最终产物"
+    },
+    {
+      "id": "ctf-director",
+      "name": "小钻 (4A市场情报总监)",
+      "role": "婚嫁黄金与钻石市场情报采集与分析",
+      "workspace": "/Users/apple/clawd-agents/ctf-director",
+      "telegram": "-5231717830",
+      "model": "google/gemini-2.5-flash"
+    },
+    {
+      "id": "vn-realestate",
+      "name": "阿南 (越南房地产专家)",
+      "role": "越南本地房地产项目跟进与周报",
+      "workspace": "/Users/apple/clawd-agents/vn-realestate",
+      "telegram": "-5151557628",
+      "model": "google/gemini-2.5-flash"
+    },
+    {
+      "id": "news-analyst",
+      "name": "探哥 (新闻跟踪分析)",
+      "role": "国际/技术新闻跟踪与分析",
+      "workspace": "/Users/apple/clawd-agents/news-analyst",
+      "telegram": "-5261774282",
+      "model": "google/gemini-2.5-flash"
+    },
+    {
+      "id": "nba-expert",
+      "name": "球弟 (NBA篮球专员)",
+      "role": "NBA 比赛/交易/伤病/趋势监控（湖人优先）",
+      "workspace": "/Users/apple/clawd-agents/nba-expert",
+      "telegram": "-4995447684",
+      "model": "google/gemini-2.5-flash"
+    },
+    {
+      "id": "library-keeper",
+      "name": "小雅 (资料管理+知识审阅)",
+      "role": "维护资料库、每日知识审阅与精华归档",
+      "workspace": "/Users/apple/clawd-agents/library-keeper",
+      "telegram": "-5137214022",
+      "model": "google/gemini-2.5-flash"
+    },
+    {
+      "id": "designer",
+      "name": "画画 (顶级平面设计师)",
+      "role": "图像生成、平面设计与视频制作",
+      "workspace": "/Users/apple/clawd-agents/designer",
+      "telegram": "-5175626021",
+      "model": "google/gemini-2.5-pro"
+    },
+    {
+      "id": "writer-editor",
+      "name": "简宁（文案总编）",
+      "role": "文案写作与编辑，短/长稿产出",
+      "workspace": "/Users/apple/clawd-agents/writer-editor",
+      "telegram": "-5260834117",
+      "model": "google/gemini-2.5-pro"
+    },
+    {
+      "id": "codex-engineer",
+      "name": "代码机（Codex 工程机器人）",
+      "role": "代码实现、重构、修复与自动化脚本交付",
+      "workspace": "/Users/apple/clawd-agents/codex-engineer",
+      "telegram": "-5254564680",
+      "model": "openai-codex/gpt-5.3-codex"
+    }
+  ]
+}

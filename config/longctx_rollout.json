@@ -1,0 +1,6 @@
+{
+  "mode": "pilot",
+  "pilotAgents": ["main", "news-analyst", "ctf-director"],
+  "enforceIsolation": true,
+  "notes": "Phase A rollout: main + news-analyst + ctf-director use unified memory write path for longctx compaction."
+}

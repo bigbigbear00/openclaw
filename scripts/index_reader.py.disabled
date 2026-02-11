@@ -1,0 +1,51 @@
+#!/usr/bin/env python3
+"""
+Simple index reader for agent workspaces.
+Usage: index_reader.py <agent_id>
+- Polls /Users/apple/clawd/claw_comm/<agent>/index.json for last_request
+- If last_request exists and not seen, write an ack into inbox.jsonl and optionally trigger handler logic (placeholder)
+- Intended to be run under pm2 or cron as agent-local helper
+"""
+import sys, json, time
+from pathlib import Path
+
+if len(sys.argv)<2:
+    print('Usage: index_reader.py <agent_id>')
+    raise SystemExit(2)
+agent=sys.argv[1]
+base=Path('/Users/apple/clawd')
+comm=base/'claw_comm'/agent
+index_file=comm/'index.json'
+inbox=comm/'inbox.jsonl'
+seen_file=comm/'.index_last_seen'
+
+last_seen=None
+if seen_file.exists():
+    last_seen=seen_file.read_text(encoding='utf-8').strip()
+
+if not index_file.exists():
+    print('no index for',agent)
+    raise SystemExit(0)
+
+try:
+    j=json.loads(index_file.read_text(encoding='utf-8'))
+except Exception:
+    print('bad index json')
+    raise SystemExit(0)
+
+req=j.get('last_request')
+if not req:
+    print('no last_request')
+    raise SystemExit(0)
+
+req_id=req.get('id')
+if req_id==last_seen:
+    print('already seen')
+    raise SystemExit(0)
+
+# append ack to inbox
+ack={'id': 'ack-'+req_id, 'timestamp': __import__('datetime').datetime.now().isoformat(), 'from': f'agent:{agent}', 'to': 'agent:main:main', 'type':'ack', 'subject':'ack for '+req_id, 'body':'ack read index', 'status':'done'}
+with open(inbox,'a',encoding='utf-8') as f:
+    f.write(json.dumps(ack,ensure_ascii=False)+"\n")
+seen_file.write_text(req_id,encoding='utf-8')
+print('ack written for',req_id)

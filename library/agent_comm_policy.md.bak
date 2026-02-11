@@ -1,0 +1,71 @@
+Agent↔Agent Communication Policy (global)
+
+Generated: 2026-02-08T10:05 (Asia/Shanghai)
+
+Purpose
+- Define a standard, auditable, machine- and human-friendly protocol for written exchanges between the main controller (哆啦Ai熊) and each digital employee (agent).
+- Ensure messages, requests, replies, and file exchanges are discoverable, traceable, and minimally disruptive (no more manual forwarding required).
+
+Core rules
+1) One Inbox per Agent
+   - Location: /Users/apple/clawd/claw_comm/<agent_key>/inbox.jsonl  (append-only JSONL)
+   - All requests from main → agent and agent → main are written as structured JSON entries to the recipient's inbox file.
+
+2) Message schema (JSON)
+   - Each entry must be a single JSON object with fields:
+     {
+       "id": "<uuid>",
+       "timestamp": "<ISO8601>",
+       "from": "agent:<id>",
+       "to": "agent:<id>",
+       "type": "request|response|notice|artifact|ack", 
+       "subject": "short summary",
+       "body": "human readable text (plain)",
+       "payload_path": "optional local path to attachment",
+       "deadline": "optional ISO timestamp",
+       "priority": "low|normal|high|urgent",
+       "status": "open|in-progress|done|skipped|failed",
+       "meta": { }
+     }
+
+3) Conversation lifecycle
+   - Sender appends a JSON entry to recipient's inbox.jsonl with status=open.
+   - Recipient must acknowledge by appending an ack entry to sender's inbox within 10 minutes (status: in-progress) when writable; if unavailable, reply with status: skipped and reason.
+   - Final outcome (done/failed/skipped) must be written as a concluding entry referencing the original id.
+
+
+
+4) Extended-mode (for long-running / deep-discussion tasks)
+   - Any message may include message.meta.mode = "extended" and must include expected_rounds (int) and expected_ttl (ISO8601 timestamp or duration).
+   - Extended mode MUST be approved by main (agent:main:main) before the recipient proceeds beyond the first reply.
+   - Approval process: main appends an approval entry to the originating topic inbox with type="approval" and status="approved" (or "rejected"). Approval entries are auditable and must be written to memory/YYYY-MM-DD.md and topics_state.json.
+   - If approved, the topic may use the specified expected_rounds/expected_ttl. If the rounds/ttl are exceeded, the topic is escalated to Gate E (human intervention).
+   - Extended-mode is intended for research/long-form tasks only and does not bypass circuit breakers.
+
+4) Artifacts and files
+   - Agents should place produced files under their agent folder (e.g., /Users/apple/clawd-agents/<agent>/reports/ or /Users/apple/clawd/claw_comm/<agent>/artifacts/ ) and reference the path in payload_path.
+   - Checksums (sha256) are recommended for important artifacts and should be included in meta.
+
+5) Visibility and auditing
+   - Main agent (agent:main:main) monitors all inbox.jsonl files and writes a short audit note into /Users/apple/clawd/memory/YYYY-MM-DD.md for significant actions (alerts, missed deadlines, completed deliverables).
+
+6) Cost Governance (tokens-first gating)
+   - Tokens-first principle: Gate and Breaker decisions MUST be evaluated on token consumption metrics first (TOKENS). The canonical thresholds are: WARN=200000 tokens, GATE=500000 tokens, BREAKER=1000000 tokens.
+   - External cost gating (USD) is only active when pricing_table.json entry for the model has pricing_status == "exact". If pricing_status is "internal_free" or "unknown", DO NOT use $0 to bypass token gating; instead, mark the topic as INTERNAL_FREE or UNKNOWN and continue tokens-first enforcement.
+   - Implementation notes:
+     * comm_validator.py and watcher scripts MUST always evaluate the token gates and write token metrics to metrics/topic_tokens.jsonl.
+     * cost ledger (metrics/topic_costs.jsonl) will be written regardless, but cost_usd_external may be null when pricing_status != "exact".
+     * Any action that would rely on USD thresholds must first check pricing_status == "exact" and log an audit entry.
+
+7) Security & privacy
+   - No password/secret tokens or personal private data in inbox entries. Attachments that require secrets must be stored in secure vaults; inbox entries should contain a reference ID only.
+
+7) Backoff & retries
+   - If no ack within 10 minutes, main will escalate by adding an entry with priority=high and optionally notifying human.
+
+Adoption
+- I will create the communication directories and a starter inbox.jsonl for each existing agent and a small helper: /Users/apple/clawd/claw_comm/README.md describing usage.
+- After creation, I will write a seed message to each agent's inbox indicating the new policy and asking them to self-report "acknowledged".
+
+Change control
+- This policy is stored in library/agent_comm_policy.md. Any change requires main approval.

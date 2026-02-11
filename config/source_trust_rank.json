@@ -1,0 +1,12 @@
+{
+  "sources": [
+    {"name": "nba.com", "match": "nba.com", "trust": 98},
+    {"name": "espn", "match": "espn.com", "trust": 95},
+    {"name": "reuters", "match": "reuters.com", "trust": 92},
+    {"name": "ap", "match": "apnews.com", "trust": 92},
+    {"name": "basketball-reference", "match": "basketball-reference.com", "trust": 90},
+    {"name": "the-athletic", "match": "theathletic.com", "trust": 88}
+  ],
+  "default_low_trust": 50,
+  "notes": "Higher trust sources chosen automatically when conflicts occur. Edit with care."
+}

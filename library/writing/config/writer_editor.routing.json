@@ -1,0 +1,19 @@
+{
+  "agentId": "writer-editor",
+  "routing": {
+    "primary": "openai/gpt-5",
+    "fallbacks": [
+      "google/gemini-2.5-pro",
+      "google/gemini-2.5-flash",
+      "openai/gpt-4o-mini"
+    ],
+    "sampling": { "temperature": 0.7, "top_p": 0.9 },
+    "segment": { "max_tokens": 700, "target_chars": 300 },
+    "budget": { "soft_cap_usd": 0.8, "hard_cap_usd": 1.2 },
+    "policies": {
+      "require_sources": true,
+      "strip_link_in_body": true,
+      "require_summary_points": 3
+    }
+  }
+}

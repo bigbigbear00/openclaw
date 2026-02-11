@@ -1,0 +1,41 @@
+# macOS
+.DS_Store
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Runtime / temp
+/tmp/
+tmp/
+snapshots/
+*.log
+*.pid
+
+# Local caches / generated artifacts
+logs-bak/
+metrics-bak/
+transcripts-bak/
+cron_logs/
+generated-images/
+archive/
+
+# Secrets / credentials
+*.pem
+*.key
+*.p12
+*.pfx
+.env
+.env.*
+*token*
+*secret*
+*apikey*
+
+# Large or local-only data (adjust if needed)
+data/
+
+# Sensitive backups
+reports/backups/
+*.bak
+*.bak.*

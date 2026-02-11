@@ -1,0 +1,331 @@
+{
+  "generated_at": "2026-02-08T10:18:00+08:00",
+  "agent_count": 8,
+  "agents": [
+    {
+      "key": "agent:main:main",
+      "name": "哆啦Ai熊",
+      "priority": "P0",
+      "domain_tags": [
+        "orchestration",
+        "reliability",
+        "memory"
+      ],
+      "channel_type": "telegram",
+      "channel_id": null,
+      "responsibilities": "主控 / 总调度 / 记忆与可靠性维护 / 最终合并与回报",
+      "personality": "可靠、克制、结构化",
+      "writable": true,
+      "model_provider": "openai",
+      "model_intent": "controller/decision",
+      "model_effective": "openai/gpt-5-mini",
+      "model_tier": "L1",
+      "pricing_key": null,
+      "identity_path": "/Users/apple/clawd/IDENTITY.md",
+      "agent_folder": "/Users/apple/clawd-agents/main",
+      "inbox_path": "/Users/apple/clawd/claw_comm/main/inbox.jsonl",
+      "artifacts_path": "/Users/apple/clawd/claw_comm/main/artifacts",
+      "tool_policy": {
+        "external_search_allowed": true,
+        "file_read_allowed": true,
+        "shell_allowed": false,
+        "subtask_create_allowed": true
+      },
+      "data_classification_allowed": "internal_draft",
+      "validation_level": "publish",
+      "sla": {
+        "cadence": "on-demand",
+        "due_local_time": null,
+        "timezone": "Asia/Shanghai"
+      },
+      "memory_db": null,
+      "onboarding_status": "active",
+      "current_top_task": "监督可靠性机制与 agent 协作",
+      "notes": "主控，hub-and-spoke 架构"
+    },
+    {
+      "key": "agent:ctf-director",
+      "name": "小钻",
+      "priority": "P1",
+      "domain_tags": [
+        "ctf",
+        "market-intel",
+        "jewelry"
+      ],
+      "channel_type": "telegram_group+cron",
+      "channel_id": "-5231717830",
+      "responsibilities": "周大福婚嫁黄金钻石市场情报采集与4A策略建议",
+      "personality": "数据驱动、结论先行",
+      "writable": true,
+      "model_provider": "google-antigravity",
+      "model_intent": "market_intel/collector",
+      "model_effective": "google-antigravity/gemini-3-pro-low",
+      "model_tier": "L2",
+      "pricing_key": null,
+      "identity_path": "/Users/apple/clawd-agents/ctf-director/IDENTITY.md",
+      "agent_folder": "/Users/apple/clawd-agents/ctf-director",
+      "inbox_path": "/Users/apple/clawd/claw_comm/ctf-director/inbox.jsonl",
+      "artifacts_path": "/Users/apple/clawd/claw_comm/ctf-director/artifacts",
+      "tool_policy": {
+        "external_search_allowed": true,
+        "file_read_allowed": true,
+        "shell_allowed": false,
+        "subtask_create_allowed": true
+      },
+      "data_classification_allowed": "internal_draft",
+      "validation_level": "internal_draft",
+      "sla": {
+        "cadence": "2h",
+        "due_local_time": "09:00",
+        "timezone": "Asia/Shanghai"
+      },
+      "memory_db": null,
+      "onboarding_status": "active",
+      "current_top_task": "CTF 周大福采集交付与早报归档",
+      "notes": "cron job id: 32ac239a-6a8d-4a45-a9bb-738bc5414dfe"
+    },
+    {
+      "key": "agent:vn-realestate",
+      "name": "阿南",
+      "priority": "P1",
+      "domain_tags": [
+        "vn",
+        "realestate",
+        "hnin"
+      ],
+      "channel_type": "telegram_group",
+      "channel_id": "-5151557628",
+      "responsibilities": "越南胡志明圈/同奈仁泽房地产情报采集与周报",
+      "personality": "稳健务实",
+      "writable": true,
+      "model_provider": "google-antigravity",
+      "model_intent": "regional_research",
+      "model_effective": "google-antigravity/gemini-3-pro-low",
+      "model_tier": "L2",
+      "pricing_key": null,
+      "identity_path": "/Users/apple/clawd-agents/vn-realestate/IDENTITY.md",
+      "agent_folder": "/Users/apple/clawd-agents/vn-realestate",
+      "inbox_path": "/Users/apple/clawd/claw_comm/vn-realestate/inbox.jsonl",
+      "artifacts_path": "/Users/apple/clawd/claw_comm/vn-realestate/artifacts",
+      "tool_policy": {
+        "external_search_allowed": true,
+        "file_read_allowed": true,
+        "shell_allowed": false,
+        "subtask_create_allowed": true
+      },
+      "data_classification_allowed": "internal_draft",
+      "validation_level": "internal_draft",
+      "sla": {
+        "cadence": "daily",
+        "due_local_time": "09:00",
+        "timezone": "Asia/Shanghai"
+      },
+      "memory_db": null,
+      "onboarding_status": "active",
+      "current_top_task": "越南房地产每日情报提交",
+      "notes": "owner of VN daily reports; recent submission at memory/2026-02-08.md"
+    },
+    {
+      "key": "agent:news-analyst",
+      "name": "探哥",
+      "priority": "P2",
+      "domain_tags": [
+        "news",
+        "international",
+        "analysis"
+      ],
+      "channel_type": "telegram_group",
+      "channel_id": "-5261774282",
+      "responsibilities": "国际新闻跟踪与深度分析",
+      "personality": "敏锐好奇、善交叉验证",
+      "writable": true,
+      "model_provider": "google-antigravity",
+      "model_intent": "news_monitor",
+      "model_effective": "google-antigravity/gemini-3-pro-low",
+      "model_tier": "L2",
+      "pricing_key": null,
+      "identity_path": "/Users/apple/clawd-agents/news-analyst/IDENTITY.md",
+      "agent_folder": "/Users/apple/clawd-agents/news-analyst",
+      "inbox_path": "/Users/apple/clawd/claw_comm/news-analyst/inbox.jsonl",
+      "artifacts_path": "/Users/apple/clawd/claw_comm/news-analyst/artifacts",
+      "tool_policy": {
+        "external_search_allowed": true,
+        "file_read_allowed": true,
+        "shell_allowed": false,
+        "subtask_create_allowed": true
+      },
+      "data_classification_allowed": "internal_draft",
+      "validation_level": "internal_draft",
+      "sla": {
+        "cadence": "6h",
+        "due_local_time": "09:00,15:00,21:00",
+        "timezone": "Asia/Shanghai"
+      },
+      "memory_db": null,
+      "onboarding_status": "active",
+      "current_top_task": "每日新闻简报执行",
+      "notes": "covers Iran / geopolitics / AI trends"
+    },
+    {
+      "key": "agent:nba-expert",
+      "name": "球弟",
+      "priority": "P2",
+      "domain_tags": [
+        "sports",
+        "nba"
+      ],
+      "channel_type": "telegram_group",
+      "channel_id": "-4995447684",
+      "responsibilities": "NBA 赛况、交易与热点",
+      "personality": "热情外向、解说型",
+      "writable": true,
+      "model_provider": "google-antigravity",
+      "model_intent": "sports_updates",
+      "model_effective": "google-antigravity/gemini-3-pro-low",
+      "model_tier": "L3",
+      "pricing_key": null,
+      "identity_path": "/Users/apple/clawd-agents/nba-expert/IDENTITY.md",
+      "agent_folder": "/Users/apple/clawd-agents/nba-expert",
+      "inbox_path": "/Users/apple/clawd/claw_comm/nba-expert/inbox.jsonl",
+      "artifacts_path": "/Users/apple/clawd/claw_comm/nba-expert/artifacts",
+      "tool_policy": {
+        "external_search_allowed": true,
+        "file_read_allowed": true,
+        "shell_allowed": false,
+        "subtask_create_allowed": true
+      },
+      "data_classification_allowed": "internal_draft",
+      "validation_level": "chat_only",
+      "sla": {
+        "cadence": "on-game",
+        "due_local_time": null,
+        "timezone": "Asia/Shanghai"
+      },
+      "memory_db": null,
+      "onboarding_status": "active",
+      "current_top_task": "每日赛况速递",
+      "notes": "produces fan-facing summaries; requires verification before external publish"
+    },
+    {
+      "key": "agent:library-keeper",
+      "name": "小雅",
+      "priority": "P2",
+      "domain_tags": [
+        "knowledge",
+        "archive",
+        "memory"
+      ],
+      "channel_type": "telegram_group",
+      "channel_id": "-5137214022",
+      "responsibilities": "资料管理、索引与记忆回填",
+      "personality": "细致、结构化",
+      "writable": true,
+      "model_provider": "google-antigravity",
+      "model_intent": "knowledge_management",
+      "model_effective": "google-antigravity/gemini-3-pro-low",
+      "model_tier": "L2",
+      "pricing_key": null,
+      "identity_path": "/Users/apple/clawd-agents/library-keeper/IDENTITY.md",
+      "agent_folder": "/Users/apple/clawd-agents/library-keeper",
+      "inbox_path": "/Users/apple/clawd/claw_comm/library-keeper/inbox.jsonl",
+      "artifacts_path": "/Users/apple/clawd/claw_comm/library-keeper/artifacts",
+      "tool_policy": {
+        "external_search_allowed": true,
+        "file_read_allowed": true,
+        "shell_allowed": false,
+        "subtask_create_allowed": true
+      },
+      "data_classification_allowed": "internal_draft",
+      "validation_level": "internal_draft",
+      "sla": {
+        "cadence": "daily",
+        "due_local_time": "10:00",
+        "timezone": "Asia/Shanghai"
+      },
+      "memory_db": null,
+      "onboarding_status": "active",
+      "current_top_task": "知识审阅与 highlights 归档",
+      "notes": "runs done-marker cron for weak-confirmation"
+    },
+    {
+      "key": "agent:designer",
+      "name": "画画",
+      "priority": "P3",
+      "domain_tags": [
+        "design",
+        "visual"
+      ],
+      "channel_type": "telegram_group",
+      "channel_id": "-5175626021",
+      "responsibilities": "视觉设计与模板制作",
+      "personality": "审美苛刻",
+      "writable": true,
+      "model_provider": "google-antigravity",
+      "model_intent": "creative_design",
+      "model_effective": "google-antigravity/gemini-3-flash",
+      "model_tier": "L3",
+      "pricing_key": null,
+      "identity_path": "/Users/apple/clawd-agents/designer/IDENTITY.md",
+      "agent_folder": "/Users/apple/clawd-agents/designer",
+      "inbox_path": "/Users/apple/clawd/claw_comm/designer/inbox.jsonl",
+      "artifacts_path": "/Users/apple/clawd/claw_comm/designer/artifacts",
+      "tool_policy": {
+        "external_search_allowed": false,
+        "file_read_allowed": true,
+        "shell_allowed": false,
+        "subtask_create_allowed": true
+      },
+      "data_classification_allowed": "internal_draft",
+      "validation_level": "internal_draft",
+      "sla": {
+        "cadence": "on-request",
+        "due_local_time": null,
+        "timezone": "Asia/Shanghai"
+      },
+      "memory_db": null,
+      "onboarding_status": "active",
+      "current_top_task": "年画设计优化",
+      "notes": "creative outputs stored in agent folder outputs/"
+    },
+    {
+      "key": "agent:writer-editor",
+      "name": "简宁",
+      "priority": "P3",
+      "domain_tags": [
+        "writing",
+        "editorial"
+      ],
+      "channel_type": "telegram_group",
+      "channel_id": "-5260834117",
+      "responsibilities": "文稿润色与最终稿出稿",
+      "personality": "结构优先、结论先行",
+      "writable": true,
+      "model_provider": "google-antigravity",
+      "model_intent": "publishing_edit",
+      "model_effective": "openai/gpt-5",
+      "model_tier": "L2",
+      "pricing_key": null,
+      "identity_path": "/Users/apple/clawd-agents/writer-editor/IDENTITY.md",
+      "agent_folder": "/Users/apple/clawd-agents/writer-editor",
+      "inbox_path": "/Users/apple/clawd/claw_comm/writer-editor/inbox.jsonl",
+      "artifacts_path": "/Users/apple/clawd/claw_comm/writer-editor/artifacts",
+      "tool_policy": {
+        "external_search_allowed": true,
+        "file_read_allowed": true,
+        "shell_allowed": false,
+        "subtask_create_allowed": true
+      },
+      "data_classification_allowed": "internal_draft",
+      "validation_level": "publish",
+      "sla": {
+        "cadence": "on_request",
+        "due_local_time": null,
+        "timezone": "Asia/Shanghai"
+      },
+      "memory_db": null,
+      "onboarding_status": "active",
+      "current_top_task": "cron 任务审查与优化",
+      "notes": "final drafts stored in final/"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "defaults": {
+    "primary": "openai-codex/gpt-5.2",
+    "fallbacks": [
+      "google/gemini-2.5-pro",
+      "google/gemini-2.5-flash",
+      "openai/gpt-5-mini"
+    ],
+    "blocked": [
+      "openai/gpt-5-pro",
+      "google-antigravity/gpt-oss-120b-medium",
+      "google/gemini-3-pro-preview",
+      "google/gemini-3-flash-preview",
+      "google-antigravity/claude-opus-4-5-thinking",
+      "google-antigravity/claude-sonnet-4-5",
+      "google-antigravity/claude-sonnet-4-5-thinking"
+    ]
+  },
+  "byTask": {
+    "writing.longform": ["openai/gpt-5", "google/gemini-2.5-pro"],
+    "code.gen": ["openai-codex/gpt-5.2", "openai/gpt-5-mini"],
+    "batch.light": ["google/gemini-2.5-flash", "openai/gpt-4o-mini"]
+  }
+}

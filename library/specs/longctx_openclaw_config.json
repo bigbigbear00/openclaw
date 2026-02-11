@@ -1,0 +1,25 @@
+{
+  "longctx": {
+    "enabled": true,
+    "reserveRatio": 0.15,
+    "reserveMinTokens": 2000,
+    "yellowRatio": 0.80,
+    "redRatio": 0.95,
+    "s1TargetTokens": 600,
+    "s2TargetTokens": 800,
+    "ragCapTokens": 2000,
+    "chunkTargetTokens": 300,
+    "windowTurnsByCtx": {
+      "128000": 20,
+      "400000": 40,
+      "1000000": 80
+    }
+  },
+  "agents": {
+    "defaults": {
+      "modelPriority": ["openai/gpt-5-mini", "google-antigravity/gemini-2.5-flash", "openai/gpt-3.5-turbo"],
+      "embeddingModel": "text-embedding-3-small",
+      "fallbackModels": ["google-antigravity/gemini-2.5-flash", "openai/gpt-3.5-turbo"]
+    }
+  }
+}

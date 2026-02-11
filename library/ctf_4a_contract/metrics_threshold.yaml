@@ -1,0 +1,18 @@
+# CTF 4A 指标阈值配置（来自 Round 6 记录，v1）
+# 用途：推送阈值、评分下限、强制人工复核规则
+
+z_score_push_threshold: 3.0
+scorecard_min_pass: 18
+
+# 可判定的强制复核规则（示例占位，按后续系统实现扩充）
+mandatory_review_rules:
+  - id: budget_large_change
+    desc: 预算出现大幅变更
+  - id: pricing_conflict
+    desc: 定价信息出现冲突
+  - id: ads_law_sensitive_words
+    desc: 出现广告法绝对化敏感词
+  - id: low_conf_high_impact
+    desc: 低置信度但潜在高影响
+  - id: major_negative_pr
+    desc: 重大负面舆情
