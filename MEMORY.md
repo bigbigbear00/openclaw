@@ -115,3 +115,9 @@
 - OpenClaw 运行基线升级到 `2026.2.9`，更新后需结合 `openclaw gateway restart` 验证可用性，当前本机链路已验证稳定。
 - Backfill 并发治理进入收口阶段：锁机制升级为原子目录锁并强化 cleanup，执行超时参数纳入默认守卫（`--max-runtime-sec 600`、`--chunk-timeout-sec 45`），用于避免锁残留与长阻塞。
 - 记忆架构定版为 `1主2域1兜底`：LongCtx 主编排、聊天RAG/文档RAG分域、原生记忆仅兜底；V2 文档已设为冲突优先级来源并驱动后续实现。
+
+## 2026-02-11 23:10 - 每日记忆精炼（自动策略）
+
+- 策略保持期确认：用户明确“记忆精炼先不收紧”，继续按当前自动策略运行一段时间，再评估是否收紧白名单。
+- LongCtx 路径口径固定：本地运行库为 `/Users/apple/clawd/data/longctx_dev.sqlite`，运行审计为 `/Users/apple/clawd/cron_logs/overflow-audit.json`。
+- 任务边界澄清：`Memory backup - Memery-Main nightly` 属于备份快照任务，不负责写入 `MEMORY.md`。
