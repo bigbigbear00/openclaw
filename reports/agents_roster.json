@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-02-09T22:12:00+08:00",
+  "generatedAt": "2026-02-14T12:08:00+08:00",
   "agents": [
     {
       "id": "main",
@@ -7,7 +7,7 @@
       "role": "主控总调度，任务分派、记忆闭环与系统可靠性",
       "workspace": "/Users/apple/clawd",
       "telegram": null,
-      "model": "openai/gpt-5-mini",
+      "model": "google-antigravity/claude-opus-4-5-thinking",
       "notes": "负责派单/审计/记忆管理、cron 调度、跨 agent 协作与合并最终产物"
     },
     {
@@ -16,7 +16,7 @@
       "role": "婚嫁黄金与钻石市场情报采集与分析",
       "workspace": "/Users/apple/clawd-agents/ctf-director",
       "telegram": "-5231717830",
-      "model": "google/gemini-2.5-flash"
+      "model": "openrouter/stepfun/step-3.5-flash:free"
     },
     {
       "id": "vn-realestate",
@@ -24,7 +24,7 @@
       "role": "越南本地房地产项目跟进与周报",
       "workspace": "/Users/apple/clawd-agents/vn-realestate",
       "telegram": "-5151557628",
-      "model": "google/gemini-2.5-flash"
+      "model": "openrouter/stepfun/step-3.5-flash:free"
     },
     {
       "id": "news-analyst",
@@ -32,7 +32,7 @@
       "role": "国际/技术新闻跟踪与分析",
       "workspace": "/Users/apple/clawd-agents/news-analyst",
       "telegram": "-5261774282",
-      "model": "google/gemini-2.5-flash"
+      "model": "openrouter/stepfun/step-3.5-flash:free"
     },
     {
       "id": "nba-expert",
@@ -40,7 +40,7 @@
       "role": "NBA 比赛/交易/伤病/趋势监控（湖人优先）",
       "workspace": "/Users/apple/clawd-agents/nba-expert",
       "telegram": "-4995447684",
-      "model": "google/gemini-2.5-flash"
+      "model": "openrouter/stepfun/step-3.5-flash:free"
     },
     {
       "id": "library-keeper",
@@ -48,7 +48,7 @@
       "role": "维护资料库、每日知识审阅与精华归档",
       "workspace": "/Users/apple/clawd-agents/library-keeper",
       "telegram": "-5137214022",
-      "model": "google/gemini-2.5-flash"
+      "model": "openrouter/stepfun/step-3.5-flash:free"
     },
     {
       "id": "designer",
@@ -64,7 +64,7 @@
       "role": "文案写作与编辑，短/长稿产出",
       "workspace": "/Users/apple/clawd-agents/writer-editor",
       "telegram": "-5260834117",
-      "model": "google/gemini-2.5-pro"
+      "model": "openrouter/arcee-ai/trinity-large-preview:free"
     },
     {
       "id": "codex-engineer",
