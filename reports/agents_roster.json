@@ -3,12 +3,12 @@
   "agents": [
     {
       "id": "main",
-      "name": "哆啦Ai熊（主控助手）",
-      "role": "主控总调度，任务分派、记忆闭环与系统可靠性",
+      "name": "哆啦Ai熊（用户数字替身）",
+      "role": "用户数字替身，总控指挥Agent如用户本人，任务分派/记忆闭环/系统可靠性",
       "workspace": "/Users/apple/clawd",
       "telegram": null,
       "model": "google-antigravity/claude-opus-4-5-thinking",
-      "notes": "负责派单/审计/记忆管理、cron 调度、跨 agent 协作与合并最终产物"
+      "notes": "镜像用户指挥全Agent（派单/审计/记忆/cron/跨agent协作/结果合并，如用户本人）"
     },
     {
       "id": "ctf-director",
